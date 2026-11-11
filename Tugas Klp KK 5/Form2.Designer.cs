@@ -36,6 +36,7 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            button4 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -43,6 +44,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(31, 33, 42);
+            panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
@@ -128,6 +130,19 @@
             button3.Text = "Dashboard";
             button3.UseVisualStyleBackColor = false;
             // 
+            // button4
+            // 
+            button4.BackColor = Color.Transparent;
+            button4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(17, 210);
+            button4.Name = "button4";
+            button4.Size = new Size(166, 29);
+            button4.TabIndex = 5;
+            button4.Text = "Dashboard";
+            button4.UseVisualStyleBackColor = false;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -152,5 +167,6 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private Button button4;
     }
 }
